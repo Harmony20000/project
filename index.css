@@ -1,0 +1,228 @@
+body{
+    margin: 0px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bg-large{
+    height: 700px;
+    background-image: url(assets/bg-layer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.7);
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset -1px 30px 30px rgba(0, 0, 0, 0.7);
+}
+.bg-large .head-sec{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.bg-large .head{
+    margin: 0px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+.bg-large .forImg{
+    width: 15%;
+}
+
+.bg-large .head img{
+    width: 100%;
+    box-sizing: border-box;
+}
+.bg-large a {
+    background: red;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+.bg-large .head a:active{
+    background: rgb(200, 0, 0);
+}
+.bg-large .get-started-sec{
+    width: 40%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.bg-large .get-started-sec h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin:0px;
+}
+.bg-large .get-started-sec p:nth-child(2){
+    font-size: 20px;
+    font-weight: 600    ;
+}
+.get-started-sec p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.get-started-sec .forinputs{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+
+}
+.get-started-sec input{
+    border: 1px solid white;
+    outline: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    width: 70%;
+    border-radius: 5px;
+    color: white;
+}
+.get-started-sec button{
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    background: red;
+    color: white;
+}
+
+.wholesec{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 20px 0px;
+    border-top: 1px solid red;
+}
+.whole{
+    margin: 0px 10%;
+}
+
+.whole .trends {
+    margin-bottom: 100px;
+}
+.whole .trends h2{
+    font-weight: 500;
+}
+.whole .carousel{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    overflow-x: hidden;
+}
+.whole .carousel img{
+    width: 20%;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+.wholesec .reasons h2 {
+    margin: 0px;
+}
+.wholesec .info-sec{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.wholesec .reasons .info{
+    width: 21%;
+    background: linear-gradient(150deg, #1A1F3F, #20111D);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.wholesec .info h2{
+    font-weight: 600;
+} 
+.wholesec .info p{
+    font-size: 16px;
+    margin-bottom: 30px;
+} 
+.wholesec .litleimg{
+    width: 30%;
+    height: fit-content;
+    text-align: right;
+    margin-top: auto;
+    margin-left: auto
+}
+.wholesec .litleimg img{
+    width: 100%;
+}
+.regis{
+    width: 70%;
+    text-align: center;
+    margin: 100px auto 0px auto;
+}
+.forfooter{
+    margin: 90px 0px;
+}
+.forfooter a,p{
+    color: rgb(177, 177, 177);
+    font-size: 15px;
+}
+.forfooter>div{
+    display: flex;
+    justify-content: space-between;
+}
+.forfooter ul{
+    padding: 0px ;
+    list-style-type: none;
+}
+.forfooter li{
+    margin: 10px 0px ;   
+}
+
+@media screen and (max-width: 768px) {
+    .bg-large .head{
+        margin: 0px 5%;
+    }
+    .bg-large .forImg{
+        width: 30%;
+    }
+    .bg-large .get-started-sec{
+        width: fit-content;
+        margin: auto 5%;
+    }
+    .bg-large .get-started-sec h1 {
+        font-size: 30px;
+    }
+    .get-started-sec input{
+        width: 60%;
+    }
+    .get-started-sec button{
+        padding: 20px;
+    }
+    .whole{
+        margin: 0px 5%;
+    }
+    .whole .carousel img{
+        width: 40%;
+    }
+    .wholesec .info-sec{
+        display: flex;
+        flex-direction: column;
+    }
+    .wholesec .reasons .info{
+        width: fit-content
+    }
+    .regis{
+        width: 100%;
+    }
+    .regis .get-started-sec button{
+        padding: 20px;
+    }
+    .forfooter>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
